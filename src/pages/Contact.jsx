@@ -1,4 +1,4 @@
-import Form from '/src/components/UI/Form.jsx';
+import Form from '/src/components/Form.jsx';
 
 export default function Contact() {
   const { formData, handleInputChange, handleFormSubmit } = Form();

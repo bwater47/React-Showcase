@@ -2,7 +2,7 @@
 export default function About() {
   return (
     <div>
-      <h1>About Me</h1>
+      <h1>Brennan</h1>
       <p>
       </p>
       <p>

@@ -1,5 +1,5 @@
-import '../../App.css';
-import { useForm } from './useForm.jsx';
+import '../Styles/Form.css';
+import { useForm } from './UI/useForm.jsx';
 
 export default function Form() {
   const { formData, errorMessage, handleInputChange, handleFormSubmit } = useForm();
