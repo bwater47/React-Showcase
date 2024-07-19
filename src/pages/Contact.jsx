@@ -1,7 +1,8 @@
-// Import the Form.jsx functions from the UI folder to handle the forms input change, and submission.
-import { handleInputChange, handleFormSubmit } from './UI/Form';
-// Export the contact function for the app to display the contact page when the user clicks on the contact tab.
+import Form from '/src/components/UI/Form.jsx';
+
 export default function Contact() {
+  const { formData, handleInputChange, handleFormSubmit } = Form();
+
   return (
     <div>
       <h1>Contact Us</h1>
