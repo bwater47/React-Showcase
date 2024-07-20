@@ -1,48 +1,42 @@
-import Form from '/src/components/Form.jsx';
+import "../Styles/Form.css";
+import { useForm } from "../components/Form";
 
 export default function Contact() {
-  const { formData, handleInputChange, handleFormSubmit } = Form();
+  const { formData, errorMessage, handleInputChange, handleFormSubmit } =
+    useForm();
 
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleFormSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <button type="submit">Send</button>
+    <div className="container text-center">
+      <h1>Hello {formData.name}</h1>
+      <form className="form" onSubmit={handleFormSubmit}>
+        <input
+          value={formData.email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="Email"
+        />
+        <input
+          value={formData.name}
+          name="name"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Name"
+        />
+        <input
+          value={formData.message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Message"
+        />
+        <button type="submit">Submit</button>
       </form>
-      <section>
-        <h2>Other Ways to Contact Us</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: yourlinkedinprofile</p>
-      </section>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 }

@@ -19,19 +19,24 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        path: 'About',
         element: <About />,
+        exact: true, // Set exact to true for the About page
       },
       {
-        path: 'portfolio',
+        path: 'Portfolio',
         element: <Portfolio />,
+        exact: true, // Set exact to true for the Portfolio page
       },
       {
-        path: 'contact',
+        path: 'Contact',
         element: <Contact />,
+        exact: true, // Set exact to true for the Contact page
       },
       {
-        path: 'resume',
+        path: 'Resume',
         element: <Resume />,
+        exact: true, // Set exact to true for the Resume page
       },
     ],
   },

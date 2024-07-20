@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 
 function NavTabs({ currentPage, handlePageChange }) {
+  // Set the default page to "About" if currentPage is not set
+  if (!currentPage) {
+    handlePageChange("About");
+  }
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link
-          to="/about"
+          to="/About"
           className={currentPage === "About" ? "nav-link active" : "nav-link"}
           onClick={() => handlePageChange("About")}
         >
@@ -14,7 +18,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <Link
-          to="/portfolio"
+          to="/Portfolio"
           className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
           onClick={() => handlePageChange("Portfolio")}
         >
@@ -23,7 +27,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <Link
-          to="/contact"
+          to="/Contact"
           className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
           onClick={() => handlePageChange("Contact")}
         >
@@ -32,7 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <Link
-          to="/resume"
+          to="/Resume"
           className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
           onClick={() => handlePageChange("Resume")}
         >
