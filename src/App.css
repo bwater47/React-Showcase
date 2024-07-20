@@ -1,0 +1,18 @@
+.nav-link {
+  color: #ffffff; /* Default link color */
+  padding: 10px 15px; /* Padding for each button */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Make sure padding applies correctly */
+  border-radius: 5px; /* Rounded corners for all buttons */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for active state */
+}
+
+.nav-link.active {
+  background-color: #d9ed92; /* Background color when active */
+  color: #333; /* Text color for active button */
+  border: none; /* Ensure no border appears */
+}
+
+.nav-item {
+  margin: 0 10px; /* Add space between buttons */
+}
