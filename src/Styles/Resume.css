@@ -1,0 +1,27 @@
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.resume-download {
+  margin-bottom: 2rem;
+}
+
+.resume-link {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #6096ba;
+  border: 2px solid #274c77;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.resume-link:hover {
+  background-color: #a3cef1;
+  border-color: #6096ba;
+  color: #ffffff;
+}

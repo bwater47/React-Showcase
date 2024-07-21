@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../Styles/NavTabs.css";
 
 function NavTabs({ currentPage, handlePageChange }) {
   // Set the default page to "About" if currentPage is not set
@@ -8,7 +7,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   }
   return (
     <header className="px-3 py-2 header-custom-background text-white d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <h1 className="nameDisplay px-2">Brennan</h1>
+      <h1 className="nameDisplay px-2">Brennan Waterbury</h1>
       <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
         <li className="nav-item">
           <Link

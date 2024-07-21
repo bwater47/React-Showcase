@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Adjust the min-height to move content higher up */
+  padding: 2rem;
+  margin-top: 1rem; /* Adjust to position the content higher */
+}
+
+.about-img {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.about-img img {
+  border-radius: 50%;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  border: 5px solid #274c77; /* Optional: Add a border color to match your button color */
+}
+
+.about-description {
+  flex: 0.6;
+}
+
+.about-description h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-description p {
+  font-size: 1rem;
+  color: #333;
+}
