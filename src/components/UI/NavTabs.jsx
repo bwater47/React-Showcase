@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 
-function NavTabs({ currentPage, handlePageChange }) {
+export default function NavTabs({ currentPage, handlePageChange }) {
   // Set the default page to "About" if currentPage is not set
   if (!currentPage) {
     handlePageChange("About");
   }
   return (
-    <header className="px-3 py-2 header-custom-background text-white d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <h1 className="nameDisplay px-2">BWaterbury</h1>
       <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
         <li className="nav-item">
           <Link
@@ -62,8 +60,5 @@ function NavTabs({ currentPage, handlePageChange }) {
           </Link>
         </li>
       </ul>
-    </header>
   );
 }
-
-export default NavTabs;

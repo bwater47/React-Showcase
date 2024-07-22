@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import NavTabs from "./components/NavTabs";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   const [currentPage, setCurrentPage] = useState("About");
 
   return (
     <div id="app">
-      <NavTabs currentPage={currentPage} handlePageChange={setCurrentPage} />
+      <Header currentPage={currentPage} handlePageChange={setCurrentPage} />
       <main className="mx-3">
         <Outlet />
       </main>
@@ -17,5 +17,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
