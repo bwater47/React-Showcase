@@ -29,7 +29,7 @@
   color: #ffffff; /* Default link color */
   padding: 10px 15px; /* Padding for each button */
   text-decoration: none; /* Remove underline from links */
-  display: inline-block; /* Make sure padding applies correctly */
+  display: inline-block; /* Ensure padding applies correctly */
   border-radius: 5px; /* Rounded corners for all buttons */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for active state */
 }
@@ -42,12 +42,34 @@
 
 .nav-link:hover {
   background-color: #a3cef1;
-  border-color: #6096ba;
+  color: #6096ba; /* Change text color on hover */
 }
 
 .nav-item {
   margin: 0 10px; /* Add space between buttons */
 }
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 425px) {
+  .nav {
+    flex-direction: column; /* Stack items vertically if needed */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Ensure vertical centering */
+    text-align: center; /* Center text inside items */
+    width: 100%; /* Ensure nav takes full width */
+  }
+
+  .nav-item {
+    width: auto; /* Remove full width to prevent overflow */
+    margin: 0; /* Remove margin to prevent alignment issues */
+    margin-bottom: 0.5rem; /* Add space between stacked items */
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
 /* Footer Styling */
 footer {
   background-color: #274c77; /* Dark background for the footer */

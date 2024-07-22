@@ -23,7 +23,7 @@ export default function About() {
     />
     </h1>
         <h2>
-          Full Stack Web Development | Designing Responsive & Dynamic Websites
+          Full Stack Web Development | Responsive Design
         </h2>
         <p>
           Currently enrolled in a coding bootcamp at the University of Utah, I
