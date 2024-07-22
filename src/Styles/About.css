@@ -18,7 +18,7 @@
   margin-right: 2rem; /* Space between image and text */
   margin-bottom: 2rem;
   position: relative; /* Ensure the image can be pushed left with absolute positioning */
-  left: -17rem; /* Push image to the left */
+  left: -8rem; /* Push image to the left */
 }
 
 .about-img img {
