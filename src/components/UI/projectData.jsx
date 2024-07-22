@@ -31,7 +31,6 @@ const projectsData = [
     },
     {
       title: "Project 6",
-      description: "Description of project 6",
       image: "https://via.placeholder.com/150",
       repoLink: "#",
       liveLink: "#"

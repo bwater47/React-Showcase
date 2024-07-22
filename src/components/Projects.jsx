@@ -20,7 +20,6 @@ export default function Projects() {
               </div>
               <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
-                <p className="card-text">{project.description}</p>
                 <a href={project.repoLink} className="btn btn-custom mr-2 mb-2">
                   Repo
                 </a>

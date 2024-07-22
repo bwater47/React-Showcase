@@ -14,7 +14,7 @@ export default function About() {
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Brennan Louis Waterbury',
-        1000, // Wait for 1 second for text to be animated
+        2000, // Wait for 1 second for text to be animated
       ]}
       wrapper="span"
       speed={50}

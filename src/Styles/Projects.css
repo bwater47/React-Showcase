@@ -22,6 +22,27 @@
   color: #ffffff;
 }
 
+.btn-custom {
+  background-color: #6096ba;
+  border-color: #274c77;
+  display: block; /* Show the button */
+  text-align: center;
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* Styles for button states */
+.btn-custom:hover {
+  background-color: #a3cef1;
+  border-color: #6096ba;
+}
+
+.btn-custom:active {
+  background-color: #6096ba;
+  color: #8b8c89;
+  border: none;
+}
+
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -63,15 +84,30 @@
   }
 
   .card-title,
-  .card-text,
-  .btn-custom {
+  .card-text {
     display: block; /* Show the elements */
     text-align: center;
   }
 
   .btn-custom {
+    background-color: #6096ba;
+    border-color: #274c77;
+    display: block; /* Show the button */
+    text-align: center;
     width: 100%;
-    margin: 5px 0; /* Condensed spacing between buttons */
+    margin: 5px 0;
+  }
+  
+  /* Styles for button states */
+  .btn-custom:hover {
+    background-color: #a3cef1;
+    border-color: #6096ba;
+  }
+  
+  .btn-custom:active {
+    background-color: #6096ba;
+    color: #8b8c89;
+    border: none;
   }
 
   .card-title {
