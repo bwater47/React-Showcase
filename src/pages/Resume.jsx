@@ -14,9 +14,7 @@ export default function Resume() {
           Download Resume
         </a>
       </div>
-      <div className="skills-section">
-        <Skills />
-      </div>
+      <Skills />
     </div>
   );
 }
