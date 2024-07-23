@@ -1,8 +1,8 @@
 # PWA-Note-Editor
 
-![React Badge](https://img.shields.io/badge/React-(50%25)-blue)
-![CSS Badge](https://img.shields.io/badge/CSS-(30%25)-lightblue)
-![HTML Badge](https://img.shields.io/badge/HTML-(20%25)-red)
+![React Badge](<https://img.shields.io/badge/React-(50%25)-blue>)
+![CSS Badge](<https://img.shields.io/badge/CSS-(30%25)-lightblue>)
+![HTML Badge](<https://img.shields.io/badge/HTML-(20%25)-red>)
 
 - A portfolio that I can work on with the latest technologies to showcase my skills and projects for employers.
 
@@ -56,14 +56,14 @@ The React Showcase is for my resume and showcasing my skills with react so that 
 
 - <strong>React Showcase Link</strong>
 
-- [Website]()
+- [Website](https://brennan-showcase.netlify.app)
 
 - <strong>React Showcase Screenshots</strong>
 
-- ![Screenshot]()
-- ![Screenshot]()
-- ![Screenshot]()
-- ![Screenshot]()
+- ![Screenshot](./src/assets/About.png)
+- ![Screenshot](./src/assets/Projects.png)
+- ![Screenshot](./src/assets/Contact.png)
+- ![Screenshot](./src/assets/Resume.png)
 
 ## Support
 
@@ -94,25 +94,29 @@ Contributing is allowed if you get in contact with me. Contact me by heading to 
 
 ## Authors and Acknowledgment
 
-Tutorial V6.25.1. v6.25.1 | React Router. (07/21/24). https://reactrouter.com/en/main/start/tutorial
+Coolors - the super fast color palettes generator!. Coolors.co. (07/23/24). https://coolors.co/ 
 
-Quick start. React. (07/21/24). https://react.dev/learn#adding-styles 
+Documentation. EmailJS. (07/23/24). https://www.emailjs.com/docs/
 
-Getting started. vitejs. (07/21/24). https://vitejs.dev/guide/
+Tutorial V6.25.1. v6.25.1 | React Router. (07/23/24). https://reactrouter.com/en/main/start/tutorial
 
-NPM docs. npm Docs. (07/21/24). https://docs.npmjs.com/
+Quick start. React. (07/23/24). https://react.dev/learn#adding-styles
 
-CLI commands. npm Docs. (07/21/24). https://docs.npmjs.com/cli/v10/commands
+Getting started. vitejs. (07/23/24). https://vitejs.dev/guide/
 
-Node.js V22.0.0 documentation. Command-line API | Node.js v22.0.0 Documentation. (07/21/24). https://nodejs.org/api/cli.html
+NPM docs. npm Docs. (07/23/24). https://docs.npmjs.com/
 
-MozDevNet. (07/21/24). Resources for developers, by developers. MDN Web Docs. https://developer.mozilla.org/en-US/
+CLI commands. npm Docs. (07/23/24). https://docs.npmjs.com/cli/v10/commands
 
-Bootcamp Spot. (07/21/24). https://bootcampspot.com/
+Node.js V22.0.0 documentation. Command-line API | Node.js v22.0.0 Documentation. (07/23/24). https://nodejs.org/api/cli.html
 
-W3Schools Online Web Tutorials. (07/21/24). https://www.w3schools.com/
+MozDevNet. (07/23/24). Resources for developers, by developers. MDN Web Docs. https://developer.mozilla.org/en-US/
 
-Chatgpt. ChatGPT. (07/21/24). https://openai.com/chatgpt
+Bootcamp Spot. (07/23/24). https://bootcampspot.com/
+
+W3Schools Online Web Tutorials. (07/23/24). https://www.w3schools.com/
+
+Chatgpt. ChatGPT. (07/23/24). https://openai.com/chatgpt
 
 • Please note: While ChatGPT was utilized to generate dialog content for the README file, it was not involved in the generation of any code, HTML edits, CSS edits, or other assets within the repository apart from this README specifically.
 

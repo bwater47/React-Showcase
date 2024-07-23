@@ -1,6 +1,8 @@
+// Import projectsData from projectData.jsx.
 import projectsData from "../components/UI/projectData.jsx";
+// Import the Projects.css file for styles.
 import "../Styles/Projects.css";
-
+// Create and export the Projects component to display the projects on the Portfolio page.
 export default function Projects() {
   return (
     <div className="container py-5">
@@ -8,7 +10,13 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div className="col-lg-4 col-md-6 mb-4" key={index}>
             <div className="card card-custom">
-              <img src={project.image} width="100%" alt={project.title} />
+              <div className="project-image-container">
+                <img
+                  src={project.image}
+                  className="project-image"
+                  alt={project.title}
+                />
+              </div>
               <div className="card-img-overlay">
                 <h2 className="card-title">{project.title}</h2>
                 <a href={project.repoLink} className="btn btn-custom">

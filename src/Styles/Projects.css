@@ -1,4 +1,4 @@
-/* General card styles */
+/* Project card component styles. */
 .card-custom {
   background-color: #8b8c89;
   border-color: #274c77;
@@ -6,32 +6,32 @@
   border-style: solid;
   position: relative;
   overflow: hidden;
-  margin: 0 auto; /* Center the card */
-  max-width: 300px; /* Adjust card width */
+  margin: 0 auto; /* Center the card. */
+  max-width: 300px; /* Adjust card width. */
 }
 
 .card-body {
-  display: none; /* Hide by default for larger screens */
+  display: none; /* Hide by default for larger screens. */
   color: #ffffff;
 }
 
 .card-title,
 .card-text,
 .btn-custom {
-  display: none; /* Hide by default for larger screens */
+  display: none; /* Hide by default for larger screens. */
   color: #ffffff;
 }
 
 .btn-custom {
   background-color: #6096ba;
   border-color: #274c77;
-  display: block; /* Show the button */
+  display: block; /* Show the button. */
   text-align: center;
   width: 100%;
   margin: 5px 0;
 }
 
-/* Styles for button states */
+/* Styles for button states. */
 .btn-custom:hover {
   background-color: #a3cef1;
   border-color: #6096ba;
@@ -75,35 +75,47 @@
   margin: 0.5rem 0;
 }
 
-/* Styles for smaller screens (mobile devices) */
+.project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Styles for smaller screens (mobile devices). */
 @media screen and (max-width: 992px) {
   .card-body {
-    display: flex; /* Show the card body */
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .card-title,
   .card-text {
-    display: block; /* Show the elements */
+    display: block;
     text-align: center;
   }
 
   .btn-custom {
     background-color: #6096ba;
     border-color: #274c77;
-    display: block; /* Show the button */
+    display: block; /* Show the button. */
     text-align: center;
     width: 100%;
     margin: 5px 0;
   }
-  
-  /* Styles for button states */
+
+  /* Styles for button states. */
   .btn-custom:hover {
     background-color: #a3cef1;
     border-color: #6096ba;
   }
-  
+
   .btn-custom:active {
     background-color: #6096ba;
     color: #8b8c89;
@@ -111,15 +123,15 @@
   }
 
   .card-title {
-    margin-bottom: 5px; /* Condensed spacing between title and buttons */
+    margin-bottom: 5px; /* Condensed spacing between title and buttons. */
   }
 
   .card-img-overlay {
-    display: none; /* Disable overlay on mobile */
+    display: none; /* Disable overlay on mobile. */
   }
 }
 
-/* Ensure the grid layout for two rows of three cards */
+/* Ensure the grid layout for two rows of three cards. */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -127,14 +139,14 @@
 
 @media screen and (min-width: 1200px) {
   .col-lg-4 {
-    flex: 0 0 33.3333%; /* 1/3 of the row */
-    max-width: 33.3333%; /* 1/3 of the row */
+    flex: 0 0 33.3333%; /* 1/3 of the row. */
+    max-width: 33.3333%; /* 1/3 of the row. */
   }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   .col-md-6 {
-    flex: 0 0 50%; /* 1/2 of the row */
-    max-width: 50%; /* 1/2 of the row */
+    flex: 0 0 50%; /* 1/2 of the row. */
+    max-width: 50%; /* 1/2 of the row. */
   }
 }

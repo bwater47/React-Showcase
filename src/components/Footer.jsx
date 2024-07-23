@@ -1,5 +1,6 @@
+// Import social icons from react-social-icons.
 import { SocialIcon } from "react-social-icons";
-
+// Export the Footer component.
 export default function Footer() {
   return (
     <footer id="footer">

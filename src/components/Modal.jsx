@@ -1,8 +1,10 @@
-import "../Styles/Modal.css"; // Add styling for the modal
-
+// Import Modal.css for styles.
+import "../Styles/Modal.css";
+// Create a Modal component to display messages to the user.
 const Modal = ({ isOpen, onClose, message }) => {
+  // If the Modal is not open, return null.
   if (!isOpen) return null;
-
+// Return the JSX for the Modal component.
   return (
     <div className="modal-overlay">
       <div className="modal-content">
@@ -12,5 +14,5 @@ const Modal = ({ isOpen, onClose, message }) => {
     </div>
   );
 };
-
+// Export the Modal component.
 export default Modal;

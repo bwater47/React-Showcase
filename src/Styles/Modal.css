@@ -1,4 +1,4 @@
-/* src/Styles/Modal.css */
+/* Modal component styles. */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -23,15 +23,15 @@
 }
 
 .modal-content p {
-    font-size: 1.125rem; /* Slightly larger text */
-    color: #333; /* Dark gray text color for better readability */
-    margin: 0 0 20px; /* Margin below the paragraph for spacing */
-    padding: 10px; /* Padding around the text */
-    border: 1px solid #ddd; /* Light border to give definition */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background color */
-    line-height: 1.5; /* Better line spacing */
-  }
+  font-size: 1.125rem; /* Slightly larger text. */
+  color: #333; /* Dark gray text color. */
+  margin: 0 0 20px; /* Margin below the paragraph for spacing. */
+  padding: 10px; /* Padding around the text. */
+  border: 1px solid #ddd; /* Light border to give definition. */
+  border-radius: 5px; /* Rounded corners. */
+  background-color: #f9f9f9; /* Light background color. */
+  line-height: 1.5; /* Better line spacing. */
+}
 
 .modal-button {
   background-color: #6096ba;
@@ -47,7 +47,7 @@
   color: #e7ecef;
 }
 
-/* Media Queries */
+/* Media Queries. */
 @media (max-width: 768px) {
   .modal-content {
     max-width: 95%;
@@ -59,8 +59,8 @@
   }
 
   .modal-content p {
-    font-size: 1rem; /* Smaller text on smaller screens */
-    margin: 0 0 15px; /* Adjusted margin */
+    font-size: 1rem; /* Smaller text on smaller screens. */
+    margin: 0 0 15px; /* Adjusted margin. */
   }
 }
 
@@ -75,8 +75,8 @@
   }
 
   .modal-content p {
-    font-size: 0.875rem; /* Even smaller text on very small screens */
-    margin: 0 0 10px; /* Adjusted margin */
-    padding: 8px; /* Adjusted padding */
+    font-size: 0.875rem; /* Even smaller text on very small screens. */
+    margin: 0 0 10px; /* Adjusted margin. */
+    padding: 8px; /* Adjusted padding. */
   }
 }

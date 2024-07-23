@@ -1,16 +1,20 @@
+// Import the Skills styles from Skills.css.
 import "../Styles/Skills.css";
+// Import the Marquee component from react-fast-marquee.
 import Marquee from "react-fast-marquee";
-
+// Export the Skills component.
 export default function Skills() {
   return (
+    // Define the Marquee component with the following props.
     <Marquee
-      autoFill={false} 
+      autoFill={false}
       play={true}
       pauseOnHover={true}
       direction="left"
-      speed={130} // Adjust the speed of the marquee
-      gradient={false} // Turn off gradient if not needed
+      speed={130} // Adjust the speed of the marquee.
+      gradient={false} // Turn off gradient if not needed.
     >
+      {/* Define the skills-container div with the skill-icon class. */}
       <div className="skills-container">
         <img
           className="skill-icon"
