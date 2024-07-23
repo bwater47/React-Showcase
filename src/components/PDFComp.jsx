@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
-function PDFComponent() {
+export default function PDFComponent() {
   const [numPages, setNumPages] = useState();
 
   function onDocumentLoadSuccess({ numPages }) {
@@ -27,6 +27,7 @@ function PDFComponent() {
                   pageNumber={page}
                   renderTextLayer={false}
                   renderAnnotationLayer={false}
+                  className="pdf-page"
                 />
               );
             })}
@@ -34,5 +35,3 @@ function PDFComponent() {
     </div>
   );
 }
-
-export { PDFComponent };

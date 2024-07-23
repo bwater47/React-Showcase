@@ -1,6 +1,6 @@
 import "../Styles/Resume.css";
 import Skills from "../components/Skills";
-import { PDFComponent } from "../components/PDFComp.jsx";
+import PDFComponent from "../components/PDFComp.jsx";
 
 export default function Resume() {
   return (
