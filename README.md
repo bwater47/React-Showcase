@@ -1,4 +1,4 @@
-# PWA-Note-Editor
+# React-Showcase
 
 ![React Badge](<https://img.shields.io/badge/React-(50%25)-blue>)
 ![CSS Badge](<https://img.shields.io/badge/CSS-(30%25)-lightblue>)
