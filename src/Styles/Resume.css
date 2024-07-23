@@ -10,13 +10,6 @@
   margin-bottom: 1.5rem;
 }
 
-.resume-viewer {
-  width: 100%;
-  max-width: 800px; /* Adjust to fit your design */
-  height: 600px; /* Adjust height as needed */
-  margin-top: 2rem; /* Add space above the iframe */
-}
-
 .resume-link {
   font-size: 1.5rem;
   color: #ffffff;
