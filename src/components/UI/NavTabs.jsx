@@ -1,11 +1,8 @@
 // Import Link from react-router-dom.
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // Export the NavTabs component.
 export default function NavTabs({ currentPage, handlePageChange }) {
-  // Set the default page to "About" if currentPage is not set.
-  if (!currentPage) {
-    handlePageChange("About");
-  }
+  const location = useLocation();
   return (
     <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
       <li className="nav-item">
@@ -13,7 +10,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
         <Link
           to="/About"
           className={
-            currentPage === "About"
+            location.pathname === "/About"
               ? "nav-link active text-secondary"
               : "nav-link text-white"
           }
@@ -27,7 +24,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
         <Link
           to="/Portfolio"
           className={
-            currentPage === "Portfolio"
+            location.pathname === "/Portfolio"
               ? "nav-link active text-secondary"
               : "nav-link text-white"
           }
@@ -41,7 +38,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
         <Link
           to="/Contact"
           className={
-            currentPage === "Contact"
+            location.pathname === "/Contact"
               ? "nav-link active text-secondary"
               : "nav-link text-white"
           }
@@ -55,7 +52,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
         <Link
           to="/Resume"
           className={
-            currentPage === "Resume"
+            location.pathname === "/Resume"
               ? "nav-link active text-secondary"
               : "nav-link text-white"
           }
