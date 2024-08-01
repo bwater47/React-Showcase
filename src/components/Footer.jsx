@@ -12,6 +12,7 @@ export default function Footer() {
             network="linkedin"
           />
           <SocialIcon url="https://x.com/brennnn23" network="x" />
+          <SocialIcon url="https://leetcode.com/u/bwater47/" network="leetcode" />
         </div>
         <p>
           2024 © Brennan Waterbury
