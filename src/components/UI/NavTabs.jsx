@@ -8,7 +8,7 @@ export default function NavTabs({ handlePageChange }) {
       <li className="nav-item">
         {/* Add a Link component to set the href to "/About" */}
         <Link
-          to="About"
+          to="/About"
           className={
             location.pathname === "/About"
               ? "nav-link active text-secondary"
@@ -22,7 +22,7 @@ export default function NavTabs({ handlePageChange }) {
       <li className="nav-item">
         {/* Add a Link component to set the href to "/Portfolio" */}
         <Link
-          to="Portfolio"
+          to="/Portfolio"
           className={
             location.pathname === "/Portfolio"
               ? "nav-link active text-secondary"
@@ -36,7 +36,7 @@ export default function NavTabs({ handlePageChange }) {
       <li className="nav-item">
         {/* Add a Link component to set the href to "/Contact" */}
         <Link
-          to="Contact"
+          to="/Contact"
           className={
             location.pathname === "/Contact"
               ? "nav-link active text-secondary"
@@ -50,7 +50,7 @@ export default function NavTabs({ handlePageChange }) {
       <li className="nav-item">
         {/* Add a Link component to set the href to "/Resume" */}
         <Link
-          to="Resume"
+          to="/Resume"
           className={
             location.pathname === "/Resume"
               ? "nav-link active text-secondary"
