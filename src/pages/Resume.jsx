@@ -17,7 +17,6 @@ export default function Resume() {
         </a>
       </div>
       <Skills />
-      // <PDFComponent />
     </div>
   );
 }
