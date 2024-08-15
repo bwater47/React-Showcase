@@ -26,21 +26,21 @@ const projectsData = [
     liveLink: "https://pwa-note-editor.onrender.com/",
   },
   {
-    title: "Project 4",
+    title: "Social API",
     image: SocialAPIImage,
     repoLink: "https://github.com/bwater47/Social-API-Turbo",
     liveLink:
       "https://drive.google.com/file/d/1rr44sNe4TknXo9sABqTTDos9rQmesAB0/view",
   },
   {
-    title: "Project 5",
+    title: "Ecom Matrix",
     image: EcomMatrixImage,
     repoLink: "https://github.com/bwater47/Ecom-Matrix",
     liveLink:
       "https://drive.google.com/file/d/1FDXGBnEouMhy5aU2KyIU_x28RUnRquHx/view",
   },
   {
-    title: "Project 6",
+    title: "HR Track Suite",
     image: HRTrackSuiteImage,
     repoLink: "https://github.com/bwater47/HR-Track-Suite",
     liveLink:
