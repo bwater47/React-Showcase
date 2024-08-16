@@ -28,13 +28,7 @@ export default function About() {
         </h1>
         <h2>Full Stack Web Development | Responsive Design</h2>
         <p>
-          Currently enrolled in a coding bootcamp at the University of Utah, I
-          am actively honing my skills to become a Full-Stack Web Developer,
-          specializing in JavaScript, React, and Node.js. I thrive in
-          environments that foster growth and learning, and I am dedicated to
-          crafting responsive and dynamic websites that make a tangible impact
-          in the tech industry. I am a team player who is coachable and eager to
-          grow in collaborative team environments
+          I am a Full Stack Web Developer with a strong focus on JavaScript, React, and Node.js. I am committed to creating responsive and dynamic websites that drive meaningful impact in the tech industry. Thriving in environments that emphasize growth and learning, I am a collaborative team player who is eager to contribute and continuously improve.
         </p>
       </div>
     </div>
