@@ -3,7 +3,7 @@ import PokeDexImage from "../../assets/PokeDex.png";
 import ActivePeakImage from "../../assets/ActivePeak.png";
 import PWAImage from "../../assets/PWA.png";
 import SocialAPIImage from "../../assets/SocialAPI.png";
-import EcomMatrixImage from "../../assets/EcomMatrix.png";
+import TweetCodeImage from "../../assets/TweetCodeImage.png";
 import HRTrackSuiteImage from "../../assets/HRTrackSuite.png";
 
 const projectsData = [
@@ -20,10 +20,10 @@ const projectsData = [
     liveLink: "https://active-peak-airb.onrender.com/",
   },
   {
-    title: "Installable Note Pad",
-    image: PWAImage,
-    repoLink: "https://github.com/bwater47/PWA-Note-Editor",
-    liveLink: "https://pwa-note-editor.onrender.com/",
+    title: "Tweet Code",
+    image: TweetCodeImage,
+    repoLink: "https://github.com/bwater47/Tweet-Code",
+    liveLink: "https://tweet-code-mlcb.onrender.com/",
   },
   {
     title: "Social API",
@@ -33,11 +33,10 @@ const projectsData = [
       "https://drive.google.com/file/d/1rr44sNe4TknXo9sABqTTDos9rQmesAB0/view",
   },
   {
-    title: "Ecom Matrix",
-    image: EcomMatrixImage,
-    repoLink: "https://github.com/bwater47/Ecom-Matrix",
-    liveLink:
-      "https://drive.google.com/file/d/1FDXGBnEouMhy5aU2KyIU_x28RUnRquHx/view",
+    title: "Installable Note Pad",
+    image: PWAImage,
+    repoLink: "https://github.com/bwater47/PWA-Note-Editor",
+    liveLink: "https://pwa-note-editor.onrender.com/",
   },
   {
     title: "HR Track Suite",
