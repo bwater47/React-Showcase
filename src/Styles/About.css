@@ -2,65 +2,60 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: calc(100vh - 12rem);
   padding: 2rem;
-  /* margin-top: 2rem; */
   flex-direction: row;
   text-align: left;
 }
 
 .about-img {
-  flex: 0.3;
+  flex: 0.4;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
-  left: -4rem;
 }
 
 .about-img img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border: 5px solid #274c77;
 }
 
 .about-description {
-  flex: 0.5;
-  padding: 2rem;
+  flex: 0.6;
+  padding: 1.5rem;  
   border: 2px solid #274c77;
   border-radius: 10px;
   background-color: rgba(139, 140, 137, 0.9);
   max-width: 50rem;
   text-align: left;
-  position: relative;
 }
 
 .about-description h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
   color: #ffffff;
   line-height: 1.2;
 }
 
 .about-description h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
   color: #e7ecef;
   line-height: 1.3;
 }
 
 .about-description p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ffffff;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) and (min-width: 769px) {
   .about {
     flex-direction: column;
     text-align: center;
@@ -69,7 +64,25 @@
   .about-img {
     margin-right: 0;
     margin-bottom: 2rem;
-    left: 0;
+  }
+
+  .about-description {
+    width: 80%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .about-img {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
   }
 
   .about-img img {
@@ -79,18 +92,18 @@
 
   .about-description {
     width: 90%;
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .about-description h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .about-description h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .about-description p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

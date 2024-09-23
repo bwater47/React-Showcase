@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 7rem; /* Adjust based on your header height. */
+  /* padding-top: 7rem; Adjust based on your header height. */
 }
 /* Header Styling */
 @font-face {
@@ -208,6 +208,13 @@
   }
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem; /* Adjust based on your header height */
+}
+
 /* Footer Styling. */
 footer {
   background-color: #274c77; /* Dark background for the footer. */
@@ -253,4 +260,10 @@ p {
   margin: 2rem 0;
   font-size: 1.2rem;
   color: #ffffff; /* Adjust based on your design. */
+}
+
+@media screen and (max-height: 700px) {
+  main {
+    padding-bottom: 5rem;
+  }
 }
