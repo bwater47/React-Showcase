@@ -1,66 +1,86 @@
-// Import Link from react-router-dom.
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
-// Export the NavTabs component.
+
 export default function NavTabs({ handlePageChange }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-      <li className="nav-item">
-        {/* Add a Link component to set the href to "/About" */}
-        <Link
-          to="/About"
-          className={
-            location.pathname === "/About"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
-          onClick={() => handlePageChange("About")}
-        >
-          About
-        </Link>
-      </li>
-      <li className="nav-item">
-        {/* Add a Link component to set the href to "/Portfolio" */}
-        <Link
-          to="/Portfolio"
-          className={
-            location.pathname === "/Portfolio"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
-          onClick={() => handlePageChange("Portfolio")}
-        >
-          Portfolio
-        </Link>
-      </li>
-      <li className="nav-item">
-        {/* Add a Link component to set the href to "/Contact" */}
-        <Link
-          to="/Contact"
-          className={
-            location.pathname === "/Contact"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
-          onClick={() => handlePageChange("Contact")}
-        >
-          Contact
-        </Link>
-      </li>
-      <li className="nav-item">
-        {/* Add a Link component to set the href to "/Resume" */}
-        <Link
-          to="/Resume"
-          className={
-            location.pathname === "/Resume"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
-          onClick={() => handlePageChange("Resume")}
-        >
-          Resume
-        </Link>
-      </li>
-    </ul>
+    <nav className={`nav-container ${isMobile ? 'mobile' : ''}`}>
+      {isMobile && (
+        <>
+          <button className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div className={`nav-overlay ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}></div>
+        </>
+      )}
+      <ul className={`nav-list ${isMenuOpen ? 'open' : ''}`}>
+        <li className="nav-item">
+          <Link
+            to="/About"
+            className={location.pathname === "/About" ? "nav-link active" : "nav-link"}
+            onClick={() => {
+              handlePageChange("About");
+              if (isMobile) setIsMenuOpen(false);
+            }}
+          >
+            About
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="/Portfolio"
+            className={location.pathname === "/Portfolio" ? "nav-link active" : "nav-link"}
+            onClick={() => {
+              handlePageChange("Portfolio");
+              if (isMobile) setIsMenuOpen(false);
+            }}
+          >
+            Portfolio
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="/Contact"
+            className={location.pathname === "/Contact" ? "nav-link active" : "nav-link"}
+            onClick={() => {
+              handlePageChange("Contact");
+              if (isMobile) setIsMenuOpen(false);
+            }}
+          >
+            Contact
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="/Resume"
+            className={location.pathname === "/Resume" ? "nav-link active" : "nav-link"}
+            onClick={() => {
+              handlePageChange("Resume");
+              if (isMobile) setIsMenuOpen(false);
+            }}
+          >
+            Resume
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }

@@ -1,10 +1,12 @@
-/* Resume component styles. */
 .resume-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2rem;
+  min-height: calc(
+    100vh - 7rem - 5rem
+  ); /* Subtract header and footer heights */
 }
 
 .resume-download {
@@ -19,41 +21,29 @@
   border: 2px solid #274c77;
   padding: 1rem 2rem;
   border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .resume-link:hover {
   background-color: #a3cef1;
   border-color: #6096ba;
-  color: #ffffff;
 }
 
-/* Media Queries. */
+/* Media Queries */
 @media (max-width: 768px) {
   .resume-container {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .resume-link {
     font-size: 1.25rem;
     padding: 0.75rem 1.5rem;
   }
-
-  .resume-download {
-    margin-bottom: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .resume-container {
-    padding: 1.5rem;
-  }
-
   .resume-link {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-  }
-
-  .resume-download {
-    margin-bottom: 1rem;
   }
 }
