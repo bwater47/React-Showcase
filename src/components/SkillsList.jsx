@@ -3,8 +3,8 @@ import "../Styles/SkillsList.css";
 
 const SkillsList = () => {
   const skills = {
-    Languages: ["HTML", "CSS", "JavaScript"],
-    Libraries: ["jQuery", "APIs", "GraphQL", "Handlebars.js"],
+    Languages: ["HTML", "CSS", "JavaScript", "TypeScript"],
+    Libraries: ["jQuery", "APIs", "GraphQL", "Handlebars.js", "Redux", "Jest"],
     Frameworks: ["Express.js", "React.js", "Next.js"],
     "Data Science": ["Time Complexity", "Data Structure"],
     Tools: [
