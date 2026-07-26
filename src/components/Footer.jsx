@@ -17,18 +17,13 @@ export default function Footer() {
             style={{ width: 40, height: 40 }}
           />
           <SocialIcon
-            url="https://x.com/brennnn23"
-            network="x"
-            style={{ width: 40, height: 40 }}
-          />
-          <SocialIcon
             url="https://leetcode.com/u/bwater47/"
             network="leetcode"
             style={{ width: 40, height: 40 }}
           />
         </div>
         <p>
-          2024 © Brennan Waterbury
+          2026 © Brennan Waterbury
         </p>
       </div>
     </footer>
