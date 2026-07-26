@@ -1,9 +1,41 @@
-// Import projectsData from projectData.jsx.
+import { useState } from "react";
 import projectsData from "../components/UI/projectData.jsx";
-// Import the Projects.css file for styles.
+import VideoModal from "../components/VideoModal";
 import "../Styles/Projects.css";
-// Create and export the Projects component to display the projects on the Portfolio page.
+
 export default function Projects() {
+  const [activeVideo, setActiveVideo] = useState(null);
+
+  const renderCta = (project) => {
+    if (project.linkType === "video") {
+      return (
+        <button
+          type="button"
+          className="btn btn-custom"
+          onClick={() =>
+            setActiveVideo({
+              title: project.title,
+              embedUrl: project.videoEmbed,
+            })
+          }
+        >
+          Video
+        </button>
+      );
+    }
+
+    return (
+      <a
+        href={project.liveLink}
+        className="btn btn-custom"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live
+      </a>
+    );
+  };
+
   return (
     <div className="container py-5">
       <div className="row justify-content-center">
@@ -19,26 +51,22 @@ export default function Projects() {
               </div>
               <div className="card-img-overlay">
                 <h2 className="card-title">{project.title}</h2>
-                <a href={project.repoLink} className="btn btn-custom">
-                  Repo
-                </a>
-                <a href={project.liveLink} className="btn btn-custom">
-                  Live
-                </a>
+                {renderCta(project)}
               </div>
               <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
-                <a href={project.repoLink} className="btn btn-custom mr-2 mb-2">
-                  Repo
-                </a>
-                <a href={project.liveLink} className="btn btn-custom ml-2 mb-2">
-                  Live
-                </a>
+                {renderCta(project)}
               </div>
             </div>
           </div>
         ))}
       </div>
+      <VideoModal
+        isOpen={Boolean(activeVideo)}
+        onClose={() => setActiveVideo(null)}
+        title={activeVideo?.title}
+        embedUrl={activeVideo?.embedUrl}
+      />
     </div>
   );
 }

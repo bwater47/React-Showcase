@@ -25,10 +25,20 @@
 .btn-custom {
   background-color: #6096ba;
   border-color: #274c77;
+  color: #ffffff;
   display: block; /* Show the button. */
   text-align: center;
   width: 100%;
   margin: 5px 0;
+  cursor: pointer;
+}
+
+a.btn-custom {
+  text-decoration: none;
+}
+
+button.btn-custom {
+  font: inherit;
 }
 
 /* Styles for button states. */

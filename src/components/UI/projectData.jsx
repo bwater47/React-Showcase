@@ -10,40 +10,38 @@ const projectsData = [
   {
     title: "PokeDex",
     image: PokeDexImage,
-    repoLink: "https://github.com/bwater47/Pokedex",
-    liveLink: "https://bwater47.github.io/Pokedex/",
+    linkType: "live",
+    liveLink: "https://pokedex-amber-nu.vercel.app/",
   },
   {
     title: "Active Peak",
     image: ActivePeakImage,
-    repoLink: "https://github.com/bwater47/Active-Peak",
-    liveLink: "https://active-peak-airb.onrender.com/",
+    linkType: "live",
+    liveLink: "https://active-peak.vercel.app/",
   },
   {
     title: "Tweet Code",
     image: TweetCodeImage,
-    repoLink: "https://github.com/bwater47/Tweet-Code",
-    liveLink: "https://tweet-code-mlcb.onrender.com/",
+    linkType: "live",
+    liveLink: "https://tweet-code.vercel.app/",
   },
   {
     title: "Social API",
     image: SocialAPIImage,
-    repoLink: "https://github.com/bwater47/Social-API-Turbo",
-    liveLink:
-      "https://drive.google.com/file/d/1rr44sNe4TknXo9sABqTTDos9rQmesAB0/view",
+    linkType: "video",
+    videoEmbed: "https://app.screencastify.com/watch/TaC1BmPkAoaBaK81Oxj6/embed",
   },
   {
     title: "Installable Note Pad",
     image: PWAImage,
-    repoLink: "https://github.com/bwater47/PWA-Note-Editor",
-    liveLink: "https://pwa-note-editor.onrender.com/",
+    linkType: "live",
+    liveLink: "https://pwa-note-editor.vercel.app/",
   },
   {
     title: "HR Track Suite",
     image: HRTrackSuiteImage,
-    repoLink: "https://github.com/bwater47/HR-Track-Suite",
-    liveLink:
-      "https://drive.google.com/file/d/198AyyoxCXoNEa_RR2n_veZQDLGb9HLas/view",
+    linkType: "video",
+    videoEmbed: "https://app.screencastify.com/watch/rZYp48rticydc6Biar7d/embed",
   },
 ];
 
