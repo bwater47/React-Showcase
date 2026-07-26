@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="NotFoundContainer">
       <h1 className="Title">404 Page Not Found</h1>
-      <p className="SubTitle">
+      <p className="Subtitle">
         Sorry, the page you are looking for does not exist.
       </p>
       <a href="/About" className="BackButton">

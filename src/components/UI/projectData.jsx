@@ -32,13 +32,13 @@ const projectsData = [
     videoEmbed: "https://app.screencastify.com/watch/TaC1BmPkAoaBaK81Oxj6/embed",
   },
   {
-    title: "Installable Note Pad",
+    title: "Note Pad",
     image: PWAImage,
     linkType: "live",
     liveLink: "https://pwa-note-editor.vercel.app/",
   },
   {
-    title: "HR Track Suite",
+    title: "HR Tracking",
     image: HRTrackSuiteImage,
     linkType: "video",
     videoEmbed: "https://app.screencastify.com/watch/rZYp48rticydc6Biar7d/embed",

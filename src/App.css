@@ -239,14 +239,12 @@ footer {
 }
 
 .social .social-icon {
-  width: 40px; /* Width of the social icons. */
-  height: 40px; /* Height of the social icons. */
   border-radius: 50%; /* Rounded shape for the icons. */
-  transition: background-color 0.3s; /* Smooth transition for hover effect. */
 }
 
-.social .social-icon:hover {
-  background-color: #d9ed92; /* Light green background on hover. */
+/* react-social-icons paints color via SVG mask fill (inline), not background-color. */
+.social .social-icon:hover .social-svg-mask {
+  fill: #d9ed92 !important; /* Light green on hover. */
 }
 
 p {
