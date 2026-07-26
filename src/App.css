@@ -234,6 +234,7 @@ footer {
 
 .social {
   display: flex;
+  justify-content: center; /* Center icons (Bootstrap .col stretches full width). */
   gap: 1rem; /* Space between icons. */
   margin-bottom: 1rem; /* Space below icons. */
 }
